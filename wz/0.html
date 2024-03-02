@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>HTML中各个标记语言（推荐）</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+<h1>HTML（超文本标记语言）是构成 Web 世界的一砖一瓦。</h1>
+    <p>它定义了网页内容的含义和结构。HTML 使用“标记”（markup）来注明文本、图片和其他内容，以便于在 Web 浏览器中显示。HTML 标记包含一些特殊“元素”。</p>
+    <br>
+    <h1>以下是一些常见的HTML元素：</h1>
+    <p>&lt;head&gt;：定义了所有的元数据信息</p>
+    <p>&lt;title&gt;：定义了文档的标题</p>
+    <p>&lt;body&gt;：定义了文档的主体</p>
+    <p>&lt;header&gt;：定义了文档的页眉</p>
+    <p>&lt;footer&gt;：定义了文档的页脚</p>
+    <p>&lt;article&gt;：定义了文档内的文章部分</p>
+    <p>&lt;section&gt;：定义了文档中的节（section、区段）</p>
+    <p>&lt;p&gt;：定义了文档的段落</p>
+    <p>&lt;div&gt;：定义了文档中的部分</p>
+    <p>&lt;span&gt;：定义了文档中的一组内联元素</p>
+    <p>&lt;img&gt;：定义了图像</p>
+    <p>&lt;aside&gt;：定义了文档的侧边栏内容</p>
+    <p>&lt;audio&gt;：定义了声音，比如音乐或其他音频流</p>
+    <p>&lt;canvas&gt;：定义了图形，比如图表和其他图像</p>
+    <p>&lt;datalist&gt;：定义了选项列表</p>
+    <p>&lt;details&gt;：定义了用户可以查看或隐藏的额外详细信息</p>
+    <p>&lt;embed&gt;：定义了一个容器，用来嵌入（比如插件）</p>
+    <p>&lt;nav&gt;：定义了文档的导航链接</p>
+    <p>&lt;output&gt;：定义了不同类型的输出，比如脚本的输出</p>
+    <p>&lt;progress&gt;：定义了任何类型的任务的进度</p>
+    <p>&lt;video&gt;：定义了视频或电影</p>
+    <p>&lt;ul&gt;：定义了无序列表</p>
+    <p>&lt;ol&gt;：定义了有序列表</p>
+    <p>&lt;li&gt;：定义了列表的项目</p>
+<h1>&lt;a&gt;：定义超链接</h1>
+    <p>&lt;form&gt;：定义HTML表单</p>
+    <p>&lt;input&gt;：定义输入控件</p>
+    <p>&lt;button&gt;：定义按钮</p>
+    <p>&lt;h1&gt;到&lt;h6&gt;：定义HTML标题</p>
+    <p>&lt;small&gt;：定义小号文本</p>
+    <p>&lt;strong&gt;：定义重要文本</p>
+    <p>&lt;kbd&gt;：定义键盘输入</p>
+    <p>&lt;video&gt;：定义视频</p>
+    <p>&lt;audio&gt;：定义音频内容</p>
+    <p>&lt;svg&gt;：定义可缩放矢量图形</p>
+    <p>&lt;table&gt;：定义表格</p>
+    <p>&lt;tr&gt;：定义表格中的行</p>
+    <p>&lt;td&gt;：定义表格中的单元</p>
+    <p>&lt;th&gt;：定义表格中的表头单元</p>
+    <p>&lt;caption&gt;：定义表格标题</p>
+    <p>&lt;fieldset&gt;：定义围绕表单中元素的边框</p>
+    <p>&lt;legend&gt;：定义&lt;fieldset&gt;元素的标题</p>
+    <p>&lt;label&gt;：定义&lt;input&gt;元素的标签</p>
+    <p>&lt;datalist&gt;：定义&lt;input&gt;元素的预定义选项</p>
+    <p>&lt;optgroup&gt;：定义选择列表中相关选项的组合</p>
+    <p>&lt;option&gt;：定义选择列表中的选项</p>
+    <p>&lt;textarea&gt;：定义多行的文本输入控件</p>
+    <p>&lt;keygen&gt;：定义生成密钥对的字段</p>
+    <p>&lt;output&gt;：定义计算结果</p>
+    <p>&lt;progress&gt;：定义任务的进度</p>
+    <p>&lt;meter&gt;：定义度量衡</p>
+    <p>&lt;details&gt;：定义用户可以查看或隐藏的额外详细信息</p>
+    <p>&lt;summary&gt;：定义&lt;details&gt;元素的标题</p>
+    <p>&lt;command&gt;：定义命令按钮，比如单选按钮、复选框或按钮</p>
+    <p>&lt;menu&gt;：定义命令的菜单/列表</p>
+<p>这只是HTML元素的一部分，实际上HTML有更多的元素和属性，可以用来创建丰富和互动的网页。如果你想了解更多关于HTML的信息，我建议你查阅相关的开发者文档或教程。希望这个信息对你有所帮助！</p>
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">HTML中各个标记语言（推荐）</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

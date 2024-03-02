@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>web前端框架介绍以及使用方法（小白必看）</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+
+<h1>1. React.js</h1>
+
+<p>React是由Facebook开发并维护的一个JavaScript库，用于构建用户界面，特别是单页应用。它通过组件化的思想，使得开发者可以用独立封装的组件来构造复杂的用户界面。</p>
+
+<pre><code>
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function Hello() {
+  return &lt;h1&gt;你好，世界！&lt;/h1&gt;;
+}
+
+ReactDOM.render(
+  &lt;Hello /&gt;,
+  document.getElementById('root')
+);
+</code></pre>
+
+<h1>2. Vue.js</h1>
+
+<p>Vue是一套用于构建用户界面的渐进式框架。与其他大型框架不同的是，Vue被设计为可以自底向上逐层应用。Vue的核心库只关注视图层，易于与第三方库或既有项目整合。</p>
+
+<pre><code>
+&lt;div id="app"&gt;
+  {{ message }}
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: '你好，世界！'
+  }
+})
+&lt;/script&gt;
+</code></pre>
+
+<h1>3. Angular.js</h1>
+
+<p>Angular是一个开放源代码的Web应用框架，由Google进行全程技术支持，是一套用于构建动态Web应用的开发框架。</p>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+&lt;div ng-app="" ng-init="message='你好，世界！'"&gt;
+&lt;p&gt;{{ message }}&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</code></pre>
+
+<p>以上就是一些常用的Web前端框架，以及一些基本的使用示例。希望对你有所帮助！</p>
+
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">web前端框架介绍以及使用方法（小白必看）</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

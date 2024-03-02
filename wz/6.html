@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>学习JavaScript的重点与问题</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+<h1>学习JavaScript的重点包括：</h1>
+
+<p><strong>1. 基础语法</strong>：理解变量、数据类型、运算符、控制结构（如if语句和for循环）等基本概念。</p>
+
+<p><strong>2. 函数</strong>：理解函数的定义和调用，以及作用域和闭包的概念。</p>
+
+<p><strong>3. 对象和数组</strong>：理解如何创建和操作对象和数组，以及它们在JavaScript中的重要性。</p>
+
+<p><strong>4. 原型和继承</strong>：理解JavaScript的原型链和继承机制。</p>
+
+<p><strong>5. 异步编程</strong>：理解回调函数、Promise、async/await等异步编程概念。</p>
+
+<p><strong>6. DOM操作</strong>：理解如何使用JavaScript操作DOM，实现网页的动态交互。</p>
+
+<p><strong>7. 事件处理</strong>：理解事件的绑定和冒泡机制，以及如何处理用户输入。</p>
+
+<p><strong>8. 错误处理</strong>：理解如何使用try/catch进行错误处理。</p>
+
+<h1>需要避免的问题包括：</h1>
+
+<p><strong>1. 全局变量滥用</strong>：全局变量可能会导致意料之外的副作用，应尽量避免使用。</p>
+
+<p><strong>2. ==和===的混淆</strong>：==会进行类型转换，可能会导致意料之外的结果，建议优先使用===。</p>
+
+<p><strong>3. 变量提升</strong>：理解JavaScript的变量提升（hoisting）机制，避免因此导致的问题。</p>
+
+<p><strong>4. 回调地狱</strong>：过多的嵌套回调会导致代码难以阅读和维护，应尽量使用Promise或async/await来改善。</p>
+
+<p><strong>5. 忽视错误处理</strong>：应始终对可能出错的地方进行适当的错误处理。</p>
+
+<p><strong>6. 直接修改原型</strong>：直接修改原生对象的原型可能会导致意料之外的副作用，应避免这样做。</p>
+
+<p>以上就是学习JavaScript的一些重点和需要避免的问题，希望对你有所帮助。</p>
+
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">学习JavaScript的重点与问题</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

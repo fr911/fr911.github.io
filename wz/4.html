@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>给web前端初学者的建议</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+<h1>1. 编程思维难以理解</h1>
+
+<p>许多初学者在学习Web前端时，会发现一些基础算法、数据结构理论不扎实，导致一些编程思维难于理解。例如，如果清楚数据结构中链表结构，那么理解JavaScript中的原型链就会变得容易很多。因此，对于初学者来说，强化基础知识是非常重要的。</p>
+
+<h1>2. 缺乏良好的编码规范</h1>
+
+<p>良好的代码规范可以让我们的代码更易读、更易维护。初学者在学习Web前端的时候，完全不懂得代码规范的重要性。因此，从一开始就养成良好的编码规范，对于我们的发展有极大的帮助。</p>
+
+<h1>3. 缺乏有效的交流沟通</h1>
+
+<p>做Web前端开发工作的时候肯定不能少的是团队合作。无论是在学习的过程中，还是在做项目开发的过程中，多与别人进行交流是很重要的环节。</p>
+
+<h1>4. 学习过程混乱，没有系统的安排</h1>
+
+<p>很多初学者在学习Web前端时，整个学习流程混乱，没有系统的安排，学的不系统不专业，技术掌握的不好，浪费几个月甚至半年的时间。因此，制定一个合理的学习计划，按照计划进行学习，是提高学习效率的关键。</p>
+
+<h1>5. 学习心态</h1>
+
+<p>学习Web前端编程难是常态，比较是零基础，之前从未接触过编程。在学习过程中也会遇到想要放弃的时候。但是你需要知道，无论什么事情，开始自己一个人摸索，路走偏了是常态。多尝试是唯一的办法。</p>
+
+<p>以上就是我收集并整理的一些初学者在学习Web前端时可能会遇到的问题和解决方案。希望对你有所帮助。祝你学习顺利！</p>
+
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">给web前端初学者的建议</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

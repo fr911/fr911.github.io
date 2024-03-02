@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>学习css的重点以及问题</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+
+<h1>1. CSS选择器</h1>
+
+<p>CSS选择器是CSS的基础，它决定了你的样式将应用到哪些元素。选择器可以根据元素名、id、class、属性等选择元素。</p>
+
+<p><strong>问题</strong>：选择器优先级可能会导致样式不被应用。例如，id选择器的优先级高于class选择器，即使它在样式表中的位置较低。</p>
+
+<h1>2. 盒模型</h1>
+
+<p>盒模型是CSS的核心概念，包括margin、border、padding和content。理解盒模型对于布局非常重要。</p>
+
+<p><strong>问题</strong>：浏览器对盒模型的解释可能会有所不同。例如，一些浏览器会将border和padding包含在元素的width和height中，而其他浏览器则不会。</p>
+
+<h1>3. 布局</h1>
+
+<p>CSS提供了多种布局技术，如float、positioning、flexbox和grid。每种技术都有其适用的场景。</p>
+
+<p><strong>问题</strong>：布局可能会在不同的浏览器或设备上显示不同。需要使用响应式设计来确保网站在所有设备上都能正常工作。</p>
+
+<h1>4. 动画</h1>
+
+<p>CSS3引入了动画和过渡，可以创建复杂的动态效果。</p>
+
+<p><strong>问题</strong>：动画可能会导致性能问题，特别是在移动设备上。需要谨慎使用，并进行性能测试。</p>
+
+<h1>5. 预处理器</h1>
+
+<p>CSS预处理器如Sass和Less可以提供变量、混合、函数等功能，使CSS更易于维护和重用。</p>
+
+<p><strong>问题</strong>：预处理器需要编译成CSS才能在浏览器中运行，这增加了开发和部署的复杂性。</p>
+
+<p>以上只是一些基本的重点和可能遇到的问题，学习CSS还需要大量的实践和经验积累。希望这些信息对你有所帮助！</p>
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">学习css的重点以及问题</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>学校遇见一只小猫咪</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+<div style="text-align: center;">
+    <img src="../image/sh/1.jpg" alt="Image 1" style="width: 20%; height: auto; margin-right: 50px;">
+    <img src="../image/sh/2.jpg" alt="Image 2" style="width: 20%; height: auto; margin-right: 50px; margin-left: 50px;">
+    <img src="../image/sh/3.jpg" alt="Image 3" style="width: 20%; height: auto; margin-left: 50px;">
+</div>
+
+<h1>那是一个阳光明媚的下午</h1>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;我坐在图书馆的一个安静角落里，专心致志地学习。突然，我感觉到有什么东西轻轻地碰了碰我的腿。我低头一看，发现是一只毛色饱满，眼神炯炯有神的小猫咪。它用那双湛蓝的眼睛看着我，仿佛在说：“我饿了，你能给我点吃的吗？”</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;我心里一动，从书包里拿出了我带来的猫条。我蹲下来，小心翼翼地递给小猫。小猫咪似乎很喜欢，它用小爪子轻轻地抓住我的手，然后开始大口大口地吃起来。我看着它满足的样子，心里也感到了一种莫名的快乐。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;就这样，我们两个在那个阳光明媚的下午，相互陪伴，相互安慰。我发现，原来学习并不是孤独的，只要有一颗愿意去发现和感受的心，生活中的每一个角落都充满了温暖和惊喜。从那天开始，我每天都会带一些猫条去图书馆，希望能再次遇到那只小猫咪。而那只小猫咪，也成了我学习路上的一份特别的动力。这就是我们的故事，一个关于学习，关于友谊，关于生活的故事。</p>
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">学校遇见一只小猫咪</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

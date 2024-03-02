@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>web前端学习路线（小白必看）</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+<h1>1. 基础知识</h1>
+
+<p>- <strong>HTML</strong>：学习标签、属性、文档结构等基础知识。</p>
+<p>- <strong>CSS</strong>：理解样式规则、选择器、盒模型、布局（如Flexbox和Grid）等。</p>
+<p>- <strong>JavaScript</strong>：掌握基本语法、数据类型、函数、对象、DOM操作、事件处理等。</p>
+
+<h1>2. 进阶知识</h1>
+
+<p>- <strong>ES6+</strong>：学习包括let/const、箭头函数、模块、类、Promises、async/await等在内的新特性。</p>
+<p>- <strong>框架和库</strong>：学习如React、Vue、Angular等前端框架，以及如jQuery、Lodash等库。</p>
+<p>- <strong>CSS预处理器</strong>：如Sass、Less等。</p>
+<p>- <strong>版本控制</strong>：如Git。</p>
+
+<h1>3. 工具和测试</h1>
+
+<p>- <strong>构建工具</strong>：如Webpack、Babel、npm等。</p>
+<p>- <strong>代码编辑器</strong>：如VS Code、Sublime Text等。</p>
+<p>- <strong>调试工具</strong>：如Chrome DevTools。</p>
+<p>- <strong>单元测试</strong>：如Jest、Mocha。</p>
+
+<h1>4. 性能优化和最佳实践</h1>
+
+<p>- <strong>性能优化</strong>：理解如何减少HTTP请求、压缩文件、使用CDN、缓存等。</p>
+<p>- <strong>代码质量</strong>：如代码复用、模块化、清晰的命名规则、注释等。</p>
+<p>- <strong>网站可访问性</strong>：理解如何使网站对所有用户都是可访问的。</p>
+<p>- <strong>响应式设计</strong>：使网站在各种设备和窗口大小上都能良好运行。</p>
+
+<h1>5. 后端基础</h1>
+
+<p>- <strong>Node.js</strong>：理解Node.js的基础知识，如模块、npm、Express等。</p>
+<p>- <strong>数据库</strong>：理解SQL和NoSQL数据库，如MySQL、MongoDB。</p>
+
+<p>以上就是一个详细的Web前端学习路线。希望对你有所帮助！</p>
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">web前端学习路线（小白必看）</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.mt05 a:link{
+    color: rgb(73,74,72);
+}
+.mt05 a:hover{
+    color: rgb(255,106,0);
+    text-decoration:underline;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width" />
+    <title>文章阅读</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/gloable.css" />
+    <link rel="stylesheet" href="../css/nprogress.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+<body>
+    <div class="header">
+    </div>
+    <header class="gird-header">
+        <div class="header-fixed">
+            <div class="header-inner">
+                <a href="javascript:void(0)" class="header-logo" id="logo">Mr.YU</a>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="../article.html">博客</a></li>
+                        <li><a href="../article1.html">杂记</a></li>
+	        <li><a href="../diary.html">日记</a></li>
+                        <li><a href="../link.html">打赏</a></li>
+                    </ul>
+                </nav>
+                <a class="phone-menu">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="doc-container" id="doc-container">
+        <div class="container-fixed">
+            <div class="col-content" style="width:100%">
+                <div class="inner">
+                    <article class="article-list">
+                        <input type="hidden" value="@Model.BlogTypeID" id="blogtypeid" />
+                        <section class="article-item">
+                            <aside class="title" style="line-height:1.5;">
+                                <h4>JavaScript的经典例子（推荐）</h4>
+                                <p class="fc-grey fs-14">
+                                    <small>
+                                        作者：<a href="javascript:void(0)" target="_blank" class="fc-link">ZY</a>
+                                    </small>
+                                    <small class="ml10">围观群众：<i class="readcount">0</i></small>
+                                    <small class="ml10">更新于 <label>2023-12-1:11:20:21</label> </small>
+                                </p>
+                            </aside>
+                            <div class="time mt10" style="padding-bottom:0;">
+                                <span class="day">1</span>
+                                <span class="month fs-18">12<small class="fs-14">月</small></span>
+                                <span class="year fs-18">2023</span>
+                            </div>
+                            <div class="content artiledetail" style="border-bottom: 1px solid #e1e2e0; padding-bottom: 20px;">
+
+
+<h1>JavaScript示例</h1>
+
+<p>
+    <strong>1. Hello World：</strong>这是最基本的JavaScript代码，用于在控制台打印"Hello, World!"。这个例子展示了如何在控制台输出信息，这对于调试和学习JavaScript非常有用。
+    <br>
+    <code>console.log("Hello, World!");</code>
+</p>
+
+<p>
+    <strong>2. 函数（Function）：</strong>这个例子展示了如何定义和调用一个函数。函数是一段可以被重复使用的代码，可以提高代码的可读性和可维护性。
+    <br>
+    <code>
+    function greet(name) {
+        return "Hello, " + name + "!";
+    }
+    console.log(greet("World"));
+    </code>
+</p>
+
+<p>
+    <strong>3. 对象（Object）：</strong>这个例子展示了如何创建一个对象。在JavaScript中，对象是一个键值对的集合，可以用来存储和操作数据。
+    <br>
+    <code>
+    let car = {
+        make: "Toyota",
+        model: "Camry",
+        year: 2020,
+        displayCar: function() {
+            return this.make + " " + this.model;
+        }
+    };
+    console.log(car.displayCar());
+    </code>
+</p>
+
+<p>
+    <strong>4. 数组（Array）：</strong>这个例子展示了如何创建和操作一个数组。数组是一种特殊的对象，用于存储有序的数据集合。
+    <br>
+    <code>
+    let fruits = ["Apple", "Banana", "Cherry"];
+    for(let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+    </code>
+</p>
+
+<p>
+    <strong>5. Promise：</strong>这个例子展示了如何使用Promise进行异步编程。Promise是JavaScript中处理异步操作的一种方式，它可以帮助我们更好地组织和处理异步代码。
+    <br>
+    <code>
+    let promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            resolve("Promise resolved");
+        }, 1000);
+    });
+
+    promise.then(function(value) {
+        console.log(value);
+    });
+    </code>
+</p>
+
+<p>
+    <strong>6. 箭头函数（Arrow Function）：</strong>这个例子展示了如何使用箭头函数。箭头函数是ES6中引入的新特性，它提供了一种更简洁的方式来写函数。
+    <br>
+    <code>
+    let square = x => x * x;
+    console.log(square(5));
+    </code>
+</p>
+
+<p>
+    <strong>7. 模块（Module）：</strong>这个例子展示了如何使用模块来组织代码。模块可以帮助我们将代码分割成可重用的部分。
+    <br>
+    <code>
+    // math.js
+    export function add(x, y) {
+        return x + y;
+    }
+
+    // app.js
+    import { add } from './math.js';
+    console.log(add(2, 3));
+    </code>
+</p>
+
+<p>
+以上就是一些JavaScript的经典例子，它们展示了JavaScript的一些高级特性，如Promise、箭头函数和模块。这些例子对于理解和学习JavaScript非常有帮助。希望对你有所帮助！
+</p>
+
+
+                                <div class="copyright mt20">
+                                    <p class="f-toe fc-black">
+                                        非特殊说明，本文版权归 ZY个人博客 所有，转载请注明出处.
+                                    </p>
+                                    <p class="f-toe">
+                                        本文标题：
+                                        <a href="javascript:void(0)" class="r-title">JavaScript的经典例子（推荐）</a>
+                                    </p>
+                                </div>
+                                <ol class="b-relation"></ol>
+                            </div>
+
+
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grid-footer">
+        <div class="footer-fixed">
+            <div class="copyright">
+                <div class="info">
+                    <div class="contact">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../layui/layui.js"></script>
+    <script src="../js/yss/gloable.js"></script>
+    <script src="../js/plugins/nprogress.js"></script>
+    <script src="../js/pagecomment.js"></script>
+    <script>NProgress.start();</script>
+    <script>
+        window.onload = function () {
+            NProgress.done();
+        };
+    </script>
+</body>
+</html>
