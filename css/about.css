@@ -26,3 +26,4 @@
 .blog-list li:hover,.lab-list li a:hover,.link-list li a:hover,.resource-list li a:hover{box-shadow:2px 5px 14px #c5c5c5;-webkit-transform:translate3d(0,-3px,0);transform:translate3d(0,-2px,0)}
 @media screen and (max-width:1024px){.link-list li{width:50%}}
 @media screen and (max-width:768px){.link-list li{width:100%}}
+

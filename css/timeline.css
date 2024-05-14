@@ -182,7 +182,7 @@
     }
 }
 
-/* 中等屏幕（桌面显示器，大于等于 992px） */
+/* 中等屏幕 */
 @media (min-width: 992px) {
     .timeline-main > h1 {
         font-size: 34px;
